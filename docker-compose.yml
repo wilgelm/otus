@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  otus-db:
+    image: 'postgres:15-alpine'
+    ports:
+      - "5477:5432"
+    environment:
+      POSTGRES_DB: 'otus'
+      POSTGRES_USER: 'otus'
+      POSTGRES_PASSWORD: 'otus'
+    volumes:
+      - /var/lib/docker-data/otus-postgres:/var/lib/postgresql/data
