@@ -1,0 +1,11 @@
+# Физический уровень PostgreSQL
+- Проверка запущенности кластера [scrin](scrins/1.png)
+- Добавление данных [scrin](scrins/2.png)
+- Остановка кластера [scrin](scrins/3.png)
+- Добавление диска в VM [scrin](scrins/4.png)
+- Проверка что disk после перезагрузки не исчез [scrin](scrins/5.png)
+- Установка прав на новый диск [scrin](scrins/6.png)
+- Попытка запуска кластера после переноса данных на новый диск. Ошибка, потому что данные больше не находятся в /var/lib/postgres/16, и это надо настроить.  [scrin](scrins/7.png)
+- Настройка /etc/postgresql/16/main/postgresql.conf [scrin](scrins/8.png)
+- Запуск Postgres  [scrin](scrins/9.png)
+- Проверка данных, что они на месте. [scrin](scrins/10.png)
